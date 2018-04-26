@@ -12,6 +12,12 @@
 
 	<hr>
 
+	<% if user_signed_in? %> 
+		<div id="admin_links">
+			<%= link_to "Edit Article",edit_post_path(@post) %>
+			<%= link_to "Delete Article",post_path(@post),method: :delete, date: {confirm: "Are you sure?"} %>
+		</div>
+	<% end %>
 	<div id="share_box">
 	<p>Share my content</p>
 
@@ -31,6 +37,3 @@
 	<br>
 	<br>
 
-	<%= link_to "edit" , edit_post_path(@post) %> 
-
-	<%= link_to "Delete" , post_path(@post), method: :delete, data: {confirm: "Are you sure you wnt to delete ?"} %> 
