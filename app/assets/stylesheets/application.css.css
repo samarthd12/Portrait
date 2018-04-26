@@ -379,6 +379,9 @@ hr {
       margin: 0 1rem;
       font-size: 1rem; }
 
+.hidden {
+  display: none; }
+
 #page_title {
   text-align: center;
   border-bottom: 1px solid #E9E9E9;
