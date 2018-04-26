@@ -517,5 +517,17 @@ input[type="submit"],.button{
 	}
 }
 
+.project_button{
+	background: $highlight ;
+	color: $white ;
+	text-decoration: none ;
+	padding: 1em 2em ;
+}
+
+.button_wrapper{
+	margin: 4em 0 0 0 ;
+	text-align:center;
+}
+
 @import '/Users/samarthd/Desktop/RailsProjects/Portrait/Portrait/app/assets/stylesheets/_post_projects.css.scss' ;
 @import '/Users/samarthd/Desktop/RailsProjects/Portrait/Portrait/app/assets/stylesheets/pygments.css.scss' ;
