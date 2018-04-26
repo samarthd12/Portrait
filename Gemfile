@@ -32,6 +32,8 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
+gem 'sendgrid-ruby'
+
 group :development, :test do
 
   gem 'byebug'
