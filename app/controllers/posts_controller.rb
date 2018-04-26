@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+	before_action :authenticate_user!,except: [:index,:show]
 	before_action :find_posts,only: [:show ,:edit, :destroy,:update]
 	def index
 		@posts = Post.all.order("created_at desc").paginate(page: params[:page],per_page: 1)
