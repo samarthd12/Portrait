@@ -2,7 +2,7 @@
 
 <div id = "post_wrapper" class="skinny_wrapper"> 
 
-	<% @post.each do |post| %> 
+	<% @posts.each do |post| %> 
 		<div class="post">
 			<p class="date"><%= post.created_at.strftime('%A,%B %d') %></p>
 			<h2><a href="#">The Do List</a></h2>
@@ -10,30 +10,9 @@
 	</div>
 
 	<% end %> 
-	<div class="post">
-		<p class="date">10 April 2018</p>
-		<h2><a href="#">The Do List</a></h2>
-		<hr>
-	</div>
-	<div class="post">
-		<p class="date">10 April 2018</p>
-		<h2><a href="#">The Do List</a></h2>
-		<hr>
-	</div>
-	<div class="post">
-		<p class="date">10 April 2018</p>
-		<h2><a href="#">The Do List</a></h2>
-		<hr>
-	</div>
+	
 
 	
 </div>
 
-<div class="pagination"> 
-		<span class="previous_page disabled">⇤ Previous</span>
-		<em class="current">1</em>
-		<a rel="next" href="#">2</a>
-		<a class="next_page" href="next_page">Next ⇥</a>
-
-		
-	</div>
+<%= will_paginate @posts %>
